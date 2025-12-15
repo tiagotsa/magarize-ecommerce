@@ -16,15 +16,8 @@ app.get('/checkout.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'checkout.html'));
 });
 
-app.get('/pedidos.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'pedidos.html'));
-});
-
-// Redirecionar rotas para index.html para SPA (exceto arquivos .html e /api)
+// Redirecionar rotas para index.html
 app.get('*', (req, res) => {
-  if (req.path.includes('.') || req.path.startsWith('/api')) {
-    return res.status(404).send('Not Found');
-  }
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
