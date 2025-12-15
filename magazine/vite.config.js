@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, 'index.html'),
         checkout: path.resolve(__dirname, 'checkout.html'),
+        pedidos: path.resolve(__dirname, 'pedidos.html'),
       },
     },
   },
