@@ -4,27 +4,13 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-let dbConfig;
+// Se houver DATABASE_URL, estamos no Render. Caso contrário, local.
+const connectionString = process.env.DATABASE_URL || 
+  `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
 
-// Se existir a variável DATABASE_URL (Ou seja, estamos rodando no Render)
-if (process.env.DATABASE_URL) {
-  dbConfig = {
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-      rejectUnauthorized: false // ISSO AQUI RESOLVE O ERRO SSL/TLS!
-    }
-  };
-} else {
-  // Se não existir, estamos rodando localmente no seu computador
-  dbConfig = {
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
-  };
-}
-
-const pool = new Pool(dbConfig);
+const pool = new Pool({
+  connectionString,
+  ssl: process.env.DATABASE_URL ? { rejectUnauthorized: false } : false
+});
 
 export { pool };
