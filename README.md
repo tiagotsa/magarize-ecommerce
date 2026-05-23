@@ -9,7 +9,7 @@ Aplicação web de e-commerce desenvolvida com foco em experiência do usuário,
 
 # 📖 Sobre o Projeto
 
-https://ecommercetsa.onrender.com/
+https://ecommercetsa.onrender.com
 
 O **Magarize E-commerce** é um projeto front-end desenvolvido para representar uma interface moderna de loja virtual, contendo páginas de produtos, checkout e pedidos.
 
