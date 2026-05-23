@@ -9,7 +9,7 @@ async function renderizarPedidoRecente() {
             return;
         }
 
-        const resposta = await fetch("http://localhost:3001/api/orders");
+        const resposta = await fetch("https://magarize-backend.onrender.com/api/orders");
         const historico = await resposta.json();
 
         // Encontra apenas o pedido cujo ID é igual ao que salvamos no checkout

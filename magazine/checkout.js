@@ -51,7 +51,7 @@ formCheckout.addEventListener("submit", async (event) => {
     }
 
     try {
-        const resposta = await fetch("http://localhost:3001/api/orders", {
+        const resposta = await fetch("https://magarize-backend.onrender.com/api/orders", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
