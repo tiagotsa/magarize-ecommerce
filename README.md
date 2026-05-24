@@ -94,27 +94,35 @@ magazine/
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/carinho.PNG" alt="Descrição" width="800px">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/carinho.PNG" alt="Descrição" width="500px">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/checkout.PNG" alt="Descrição" width="800px">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/checkout.PNG" alt="Descrição" width="500px">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/pedidos.PNG" alt="Descrição" width="800px">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/pedidos.PNG" alt="Descrição" width="500px">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/rota-api-orders.PNG" alt="Descrição" width="800px">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/rota-api-orders.PNG" alt="Descrição" width="500px">
+</p>
+
+
+<div align="center">
+
+### Mobile
+
+</div>
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/mobile.PNG" alt="Descrição" width="300px">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/moblie-carrinho.PNG" alt="Descrição" width="300px">
 </p>
 
 
