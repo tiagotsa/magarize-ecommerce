@@ -1,227 +1,447 @@
-
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/tiagotsa/magarize-ecommerce/blob/main/LICENSE)
 
-# 🛍️ Magarize E-commerce
+# 🚀 Magazine Hashtag
 
-Aplicação web de e-commerce desenvolvida com foco em experiência do usuário, design moderno e organização de código. O projeto simula uma loja virtual responsiva utilizando tecnologias atuais do ecossistema JavaScript.
+Um e-commerce full stack moderno desenvolvido com **JavaScript**, **Node.js**, **PostgreSQL**, **Vite** e **TailwindCSS**, preparado para deploy profissional utilizando o **Render**.
 
 ---
 
-# 📖 Sobre o Projeto
+# 📌 Sobre o projeto
+
 
 https://ecommercetsa.onrender.com
 
-O **Magarize E-commerce** é um projeto front-end desenvolvido para representar uma interface moderna de loja virtual, contendo páginas de produtos, checkout e pedidos.
 
-A aplicação foi construída utilizando **Vite** para otimização do ambiente de desenvolvimento e build, além de **Tailwind CSS** para estilização moderna e responsiva.
+O **Magazine Hashtag** é uma aplicação de loja virtual construída para simular um fluxo real de e-commerce.
 
-O projeto possui uma estrutura limpa e organizada, sendo ideal para:
+O sistema possui:
 
-* Estudos de front-end moderno
-* Portfólio de desenvolvimento web
-* Aprendizado com Vite e Tailwind
-* Evolução futura para integração com APIs e backend
+* Catálogo de produtos
+* Carrinho de compras
+* Checkout
+* Registro de pedidos
+* API REST
+* Persistência de dados
+* Banco PostgreSQL
+* Frontend desacoplado do backend
+
+A arquitetura foi organizada para facilitar:
+
+* manutenção
+* deploy
+* escalabilidade
+* integração com serviços cloud
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+# 🛠️ Tecnologias utilizadas
 
-## 🖥️ Frontend
+## Frontend
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla JS)
-* Tailwind CSS
+* JavaScript
 * Vite
+* TailwindCSS
+* LocalStorage
 
-## ⚙️ Ferramentas
+## Backend
 
 * Node.js
-* NPM
-* Docker
-* PostCSS
-* Git & GitHub
+* Express
+* PostgreSQL
+* pg
+* dotenv
+* cors
+* JWT
+
+## Cloud & Deploy
+
+* Render
+* PostgreSQL Render
+* GitHub
 
 ---
 
-# 📂 Estrutura do Projeto
+# 📂 Estrutura do projeto
 
 ```bash
-magarize-ecommerce/
+magazine/
 │
-├── magazine/
-│   ├── dist/
-│   │   ├── assets/
-│   │   └── index.html
-│   │
-│   ├── assets/
-│   ├── checkout.html
-│   ├── checkout.js
-│   ├── pedidos.html
-│   ├── pedidos.js
-│   ├── index.html
-│   ├── main.js
-│   ├── style.css
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   ├── postcss.config.js
-│   ├── Dockerfile
-│   └── .gitignore
+├── backend/
+│   ├── src/
+│   ├── routes/
+│   ├── config/
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
+│
+├── src/
+├── assets/
+├── index.html
+├── checkout.html
+├── pedidos.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+
+# Telas da Aplicação
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/magazine-ecommerce/home.PNG" alt="Descrição" width="500px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagotsa/readme-assets/main/streaming-tiagoflix/player-filme.PNG" alt="Descrição" width="800px">
+</p>
+
+
+
+
+---
+
+# 🎯 Funcionalidades
+
+## 🛒 Carrinho de compras
+
+* Adicionar produtos
+* Remover produtos
+* Atualização automática de valores
+* Persistência no navegador
+
+---
+
+## 🔎 Catálogo de produtos
+
+* Produtos masculinos
+* Produtos femininos
+* Filtros de categorias
+* Exibição dinâmica
+
+---
+
+## 💳 Checkout
+
+* Dados do cliente
+* Endereço de entrega
+* Integração com API
+* Criação de pedidos
+
+---
+
+## 📦 Pedidos
+
+* Registro automático
+* Histórico da última compra
+* Persistência no banco de dados
+
+---
+
+# 🌐 API REST
+
+## Produtos
+
+```http
+GET /api/products
+```
+
+## Pedidos
+
+```http
+GET /api/orders
+POST /api/orders
 ```
 
 ---
 
-# ✨ Funcionalidades
+# ☁️ Deploy profissional no Render
 
-## 🏠 Página Inicial
+O projeto foi estruturado para deploy utilizando:
 
-* Exibição de produtos
-* Layout moderno
-* Interface responsiva
-* Navegação intuitiva
-
-## 🛒 Checkout
-
-* Simulação de finalização de compra
-* Organização visual dos itens
-* Interface otimizada para experiência do usuário
-
-## 📦 Página de Pedidos
-
-* Estrutura para visualização de pedidos
-* Separação organizada das informações
-
-## 🎨 Responsividade
-
-* Compatível com desktop
-* Compatível com tablets
-* Compatível com dispositivos móveis
+| Serviço            | Função         |
+| ------------------ | -------------- |
+| Render Static Site | Frontend       |
+| Render Web Service | Backend        |
+| Render PostgreSQL  | Banco de Dados |
 
 ---
 
-# 🎯 Características do Projeto
+# 🚀 Como hospedar no Render
 
-✅ Estrutura organizada
+# 1️⃣ Suba o projeto para o GitHub
 
-✅ Código limpo e simples
-
-✅ Arquitetura front-end moderna
-
-✅ Build otimizado com Vite
-
-✅ Estilização com Tailwind CSS
-
-✅ Projeto preparado para deploy
-
-✅ Containerização com Docker
-
----
-
-# ⚙️ Como Executar o Projeto
-
-## 1️⃣ Clone o repositório
+Crie um novo repositório:
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+```
+
+Conecte ao GitHub:
+
+```bash
+git remote add origin https://github.com/seu-usuario/magazine-hashtag.git
+```
+
+Envie o projeto:
+
+```bash
+git push -u origin main
 ```
 
 ---
 
-## 2️⃣ Entre na pasta do projeto
+# 🗄️ 2️⃣ Criar banco PostgreSQL no Render
 
-```bash
-cd magarize-ecommerce/magazine
+1. Acesse o painel do Render
+2. Clique em **New +**
+3. Escolha **PostgreSQL**
+4. Configure:
+
+| Campo    | Valor              |
+| -------- | ------------------ |
+| Name     | magazine-db        |
+| Database | magazine           |
+| User     | magazine_user      |
+| Region   | Oregon / Frankfurt |
+
+5. Clique em **Create Database**
+
+Após criar:
+
+Copie a variável:
+
+```env
+Internal Database URL
 ```
 
 ---
 
-## 3️⃣ Instale as dependências
+# ⚙️ 3️⃣ Deploy do Backend
 
-```bash
-npm install
+# Criar Web Service
+
+1. Clique em **New +**
+2. Escolha **Web Service**
+3. Conecte o repositório GitHub
+4. Selecione a pasta backend
+
+---
+
+# Configuração do serviço
+
+| Campo         | Valor        |
+| ------------- | ------------ |
+| Name          | magazine-api |
+| Runtime       | Node         |
+| Build Command | npm install  |
+| Start Command | npm start    |
+
+---
+
+# Variáveis de ambiente
+
+Configure:
+
+```env
+DATABASE_URL=sua_database_url
+JWT_SECRET=seu_secret
+PORT=10000
+NODE_ENV=production
 ```
 
 ---
 
-## 4️⃣ Execute o ambiente de desenvolvimento
+# Configuração obrigatória do servidor
 
-```bash
-npm run dev
+No `server.js`:
+
+```js
+const PORT = process.env.PORT || 3001
 ```
 
 ---
 
-## 5️⃣ Acesse no navegador
+# Configuração do PostgreSQL SSL
 
-```bash
-http://localhost:5173
+```js
+ssl: {
+  rejectUnauthorized: false
+}
 ```
 
 ---
 
-# 📦 Gerar Build de Produção
+# Configuração do CORS
 
-```bash
-npm run build
-```
-
-Os arquivos finais serão gerados dentro da pasta:
-
-```bash
-dist/
+```js
+app.use(cors({
+  origin: '*'
+}))
 ```
 
 ---
 
-# 🐳 Executando com Docker
+# 🌐 4️⃣ Deploy do Frontend
 
-## Build da imagem
+# Criar Static Site
 
-```bash
-docker build -t magarize-ecommerce .
-```
+1. Clique em **New +**
+2. Escolha **Static Site**
+3. Conecte o repositório
 
-## Executar container
+---
 
-```bash
-docker run -p 5173:5173 magarize-ecommerce
+# Configuração
+
+| Campo             | Valor                        |
+| ----------------- | ---------------------------- |
+| Build Command     | npm install && npm run build |
+| Publish Directory | dist                         |
+
+---
+
+# 🔗 Configurar API no frontend
+
+Altere a URL da API:
+
+```js
+const API_URL = 'https://magazine-api.onrender.com'
 ```
 
 ---
 
-# 🎨 Design e Interface
+# 🔄 Deploy automático
 
-O projeto foi desenvolvido priorizando:
+Sempre que houver push:
 
-* Visual moderno
-* Boa experiência do usuário
-* Responsividade
-* Organização visual
-* Facilidade de navegação
-* Performance no carregamento
+```bash
+git add .
+git commit -m "update"
+git push
+```
+
+O Render fará deploy automaticamente.
 
 ---
 
-# 📈 Possíveis Melhorias Futuras
+# 🧪 Estrutura final em produção
 
-* Integração com backend
-* Banco de dados
-* Sistema de autenticação
-* Carrinho persistente
-* API REST
-* Painel administrativo
+```bash
+Frontend:
+https://magazine-store.onrender.com
+
+Backend:
+https://magazine-api.onrender.com
+
+Banco:
+PostgreSQL Render
+```
+
+---
+
+# ⚠️ Problemas comuns
+
+# Erro de CORS
+
+```js
+app.use(cors())
+```
+
+---
+
+# Erro PostgreSQL SSL
+
+```js
+ssl: {
+  rejectUnauthorized: false
+}
+```
+
+---
+
+# Página branca no frontend
+
+Verifique:
+
+* Build do Vite
+* Caminho do dist
+* URL da API
+* Variáveis de ambiente
+
+---
+
+# 🐳 Docker
+
+## Build
+
+```bash
+docker build -t magazine-hashtag .
+```
+
+## Executar
+
+```bash
+docker run -p 9090:9090 magazine-hashtag
+```
+
+---
+
+# 📈 Melhorias futuras
+
+* Login de usuários
+* Dashboard administrativo
 * Integração com pagamentos
-* Sistema de favoritos
-* Busca de produtos
-* Filtros avançados
+* Upload de produtos
+* Testes automatizados
+* CI/CD
+* Docker Compose
+* Kubernetes
 
 ---
 
-# 👨‍💻 Autor
+# 📸 Preview
 
-Projeto desenvolvido por **Tiago Almeida**.
+Adicione screenshots:
+
+```bash
+/assets/preview/home.png
+/assets/preview/checkout.png
+/assets/preview/orders.png
+```
+
+---
+
+# 🤝 Contribuição
+
+1. Faça um fork
+2. Crie uma branch
+3. Commit suas alterações
+4. Abra um Pull Request
 
 ---
 
@@ -231,8 +451,16 @@ Este projeto está sob a licença MIT.
 
 ---
 
-# ⭐ Considerações Finais
+# 👨‍💻 Autor
 
-O **Magarize E-commerce** é um projeto moderno de e-commerce front-end que demonstra conhecimentos em estruturação de aplicações web, componentização de páginas, responsividade e utilização de ferramentas atuais do ecossistema JavaScript.
+Desenvolvido por **Tiago Almeida**.
 
-Além de servir como projeto de estudos, também é uma excelente base para evolução futura com integração completa de backend e banco de dados.
+---
+
+# ⭐ Apoie o projeto
+
+Se este projeto foi útil:
+
+* Deixe uma estrela ⭐
+* Compartilhe o projeto
+
