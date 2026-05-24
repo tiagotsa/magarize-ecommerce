@@ -455,7 +455,7 @@ Adicione screenshots:
 
 # 📄 Licença
 
-Este projeto está sob a licença MIT.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/tiagotsa/magarize-ecommerce/blob/main/LICENSE)
 
 ---
 
